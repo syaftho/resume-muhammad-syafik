@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd Example</title>
+  <!--link rel="icon" type="image/x-icon" href="IMAGE/logo.png"-->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="javascript" href="title.js">
+  
+
+  <!---------------- START CSS SECTION ------------------>
+  <style>
+
+    /** START: MARQUEE (TEXT SCROLLING) **/
+    .scroll-left {
+     height: 10px;	
+     overflow: hidden;
+     position: relative;
+     background: #edc7b7;
+     color: #ac3b61;
+     
+    }
+    .scroll-left p {
+      position: absolute;
+     width: 100%;
+     /*height: 100%;*/
+     margin: -20px;
+     line-height: 50px;
+     text-align: center;
+     font-family: 'Trebuchet MS', sans-serif;
+     font-size: 35px;
+     /* Starting position */
+     transform:translateX(100%);
+     /* Apply animation to this element */
+     animation: scroll-left 25s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @keyframes scroll-left {
+     0%   {
+     transform: translateX(100%); 		
+     }
+     100% {
+     transform: translateX(-100%); 
+     }
+    }
+  
+  /** END: MARQUEE (TEXT SCROLLING) **/
+
+  /**START: SKILL BAR **/
+
+  * {box-sizing: border-box}
+
+
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fbf8f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.html {width: 90%; background-color: #6e4836;}
+.css {width: 70%; background-color: #7b513c;}
+.js {width: 40%; background-color: #895a42;}
+.php {width: 55%; background-color: #96624a;}
+.microsoft {width: 95%; background-color: #ae7558; }
+
+/** END: SKILL BAR **/
+
+
+/** START: STAR RATING **/
+
+.checked {
+  color: orange;
+}
+
+/** END: STAR RATING **/
+
+
+/** START: IMAGE GALLERY **/
+
+div.gallery img {
+  width: 50%;
+  height: auto;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/** END: IMAGE GALLERY **/
+    </style>
+</head>
+
+
+<!--------------- START HTML SECTION ----------------->
+<body>
+	
+	<div class="header">
+    <!--img src="IMAGE/dp.png" alt="my_header"-->
+  </div>
+
+<a name="home"></a>
+  <ul>
+  <li><a href="references.html">References</a></li>
+  <li><a href="core_skill.html">Core Skills</a></li>
+  <li><a href="experience.html">Working Experience</a></li>
+  <li><a href="cocu.html">Achievements</a></li>
+  <li><a href="educational.html">Education</a></li>
+  <li><a href="personal_details.html">Personal Details</a></li>
+  <li><a href="index.html">Home</a></li>
+</ul>
+
+
+
+
+
+  <!--------------------------HOME ICON BUTTON ------------------------->
+<!-- Add icon library -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons to buttons  -->
+<div class="fixed">
+<a href="#home"><button class="btn"><i class="fa fa-home"></i></button></a>
+</div>
+
+
+<!----------------- TITLE ------------------>
+
+<center><h5 class="animate-charcter"> CORE SKILLS </h5></center>
+
+
+<!----------------- CONTENT ------------------>
+
+<div class="row">
+  <div class="column">
+    <div class="container">
+        <img src="IMAGE/skill.png" alt="computer_skills" class="image" style="width:100%">
+        
+        <div class="middle">
+          <div class="text">
+            <a href="#comp_skills"><p class="obj"> Computer Skills </p></a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="container">
+        <img src="IMAGE/skill.png" alt="language_skills" class="image" style="width:100%">
+        
+        <div class="middle">
+          <div class="text">
+            <a href="#lang_skills"><p class="obj"> Language Skills </p></a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="container">
+        <img src="IMAGE/skill.png" alt="personal_skills" class="image" style="width:100%">
+        
+        <div class="middle">
+          <div class="text">
+            <a href="#personal_skills"><p class="obj"> Personal Skills </p></a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!----------- COMPUTER SKILLS SECTION -------------->
+  <a name="comp_skills">
+  <div class="scroll-left">
+      <p> <b> COMPUTER SKILLS </b></p>
+  </div>
+
+   <br><br>
+   <div class="skills microsoft">Microsoft office -95%</div>
+
+    <br>
+    <div class="skills html">HTML - 90%</div>
+
+    <br>
+    <div class="skills css"> CSS - 70%</div>
+
+    <br>
+    <div class="skills js">JavaScript - 40%</div>
+
+    <br>
+    <div class="skills php">PHP - 55%</div>
+
+
+
+  <!----------- LANGUAGE SKILLS SECTION -------------->
+  <br><br><br><br><br><br><br><br><br><br>
+  <a name="lang_skills">
+  <div class="scroll-left">
+        <p> <b> LANGUAGE SKILLS </b></p>
+  </div>
+
+  <br><br><br><br><br><br>
+    <div class="row">
+      <div class="column">
+        <h2>BAHASA MELAYU</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Speaking </h5>
+
+
+        <br><br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Reading </h5>
+
+
+        <br><br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Writing </h5>
+      </div>
+
+
+
+      <div class="column">
+        <h2>ENGLISH</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Speaking </h5>
+
+
+        <br><br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Reading </h5>
+
+
+        <br><br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Writing </h5>
+      </div>
+
+
+
+      <div class="column">
+        <h2>MANDARIN</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Speaking </h5>
+
+
+        <br><br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Reading </h5>
+
+
+        <br><br><br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h5> Writing </h5>
+      </div>
+    </div>
+
+    
+
+<!----------- PERSONAL SKILLS SECTION -------------->
+<br><br><br><br><br><br><br><br><br><br>
+<a name="personal_skills">
+<div class="scroll-left">
+      <p> <b> PERSONAL SKILLS </b></p>
+</div>
+
+<br><br><br>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMAGE/family.png">
+      <img src="IMAGE/family.png" alt="teamwork" width="400" height="200">
+    </a>
+    <div class="desc">Teamwork</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMAGE/team.png">
+      <img src="IMAGE/team.png" alt="communication" width="400" height="200">
+    </a>
+    <div class="desc">Communication</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMAGE/classmates.png">
+      <img src="IMAGE/classmates.png" alt="time mgt" width="400" height="200">
+    </a>
+    <div class="desc">Time Management</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="IMAGE/solve.png">
+      <img src="IMAGE/solve.png" alt="problem solving" width="400" height="200">
+    </a>
+    <div class="desc">Problem Solving</div>
+  </div>
+</div>
+
+ 
+
+      
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!----------------- FOOTER ------------------>
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+Copyright © 2024 - All rights reserved || Designed By: Muhammad Syafik 
+</div>
+</div>
+</footer>
+
+
+</center>
+
+
+</body>
+</html>

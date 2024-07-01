@@ -1,0 +1,416 @@
+
+/** Color background**/
+body {
+  background-color: #eee2dc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #123c69;
+}
+
+/** DIV SECTION **/
+div.image{
+  padding: auto;
+  margin-top: -80px;
+  
+}
+
+
+
+/** HEADER **/
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #eee2dc;
+  color: #123c69;
+  font-size: 15px;
+  position: relative;
+  
+}
+
+
+/** NAVIGATION BAR / MENU **/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #edc7b7;
+  position: relative;
+  
+  
+}
+  
+li {
+  float: right;
+  text-align: center;
+  padding-left: 30px;
+  margin-right: 20px;
+}
+
+li a {
+  display: block;
+  color: #123c69;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #eee2dc;
+  color: #123c69;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/** ANIMATION TEXT **/
+.animate-charcter
+{
+  
+   text-transform: uppercase;
+   background-image: linear-gradient(
+    -225deg,
+    #ac3b61 0%,
+    #945249 29%,
+    #412722 67%,
+    #123c69 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: black;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+/** IMAGE STYLING **/
+img {
+  border-radius: 30%;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** IMAGE STYLING_PERSONAL **/
+img.personal {
+  border-radius: 8px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+/** IMAGE STYLING_ACHIVEMENTS **/
+img.ach {
+  border-radius: 8px;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
+  
+}
+
+.parent {
+  margin: 1rem;
+  margin-top: auto;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+
+
+/** ORDER LIST **/ 
+ol {
+  
+  font-display: block;
+  display: inherit;
+  text-align: left;
+  margin-left: 1rem;
+  float: left;
+}
+
+
+/** SUB MENU - CORE SKILLS **/
+h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ac3b61;
+  background-color: #edc7b7;
+  position: relative;
+  margin: 0;
+  padding: 15px;
+ 
+}
+
+
+/** TEST TABLE STYLE **/
+table.tab, th.tab, td.tab{
+  margin: 30px;
+  border: 2px solid #edc7b7;
+  border-collapse: collapse;
+  padding: 15px;
+  width: 80%;
+  table-layout: fixed;
+  text-align: center;
+}
+
+
+td.tab2{
+
+  border-bottom: 2px solid #edc7b7;
+  border-collapse: collapse;
+  padding: 15px;
+  width: 80%;
+  table-layout: fixed;
+  text-align: left;
+}
+
+/** IMAGE OVERLAY EFFECTS **/
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /**background-color: #04AA6D;**/
+  color: #123c69;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+/** IMAGE SIDE BY SIDE **/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  margin-left: 1rem;
+  width: 30%;
+  padding: 2px;
+  margin-top: -5rem;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/** HOME BUTTON **/
+
+/* Style buttons */
+.btn {
+  background-color: #eee2dc; /* Blue background */
+  border: none; /* Remove borders */
+  color: #ac3b61; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 20px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  
+  
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #eee2dc;
+  color: #123c69;
+}
+
+
+div.fixed {
+  position: fixed;
+  /*width: 10%;*/
+  bottom: 0px;
+  float: right;
+  
+} 
+
+
+font{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #123c69;
+  font-weight: bold;
+}
+
+/** For text in paragraph text **/
+p.obj {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  color: #ac3b61;
+  text-decoration: double;
+  font-weight: 600;
+    
+}
+
+
+p.obj2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #ac3b61;
+  margin-left: 0;
+  font-weight: 200;
+    
+}
+
+/** For text in paragraph text **/
+p.year {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #123c69;
+    
+}
+
+
+/** For class division **/
+div {
+
+
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+
+/** boleh buang tapi hold sat **/
+div.test {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+/** FOOTER **/
+body{
+  margin: 0;
+  overflow-x:hidden;
+  }
+  
+  .footer{
+  background:#edc7b7;
+  padding:30px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:#123c69);
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:#123c69;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#ac3b61;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
